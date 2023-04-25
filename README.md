@@ -1,1 +1,11 @@
 # decision_tree_Pruning
+
+Decision tree pruning is a technique used in machine learning to reduce the size of a decision tree by removing unnecessary branches or nodes. The goal of pruning is to simplify the decision tree while preserving its predictive accuracy, and thereby improving its generalization performance on unseen data. Pruning is typically performed after the decision tree is trained using a dataset.
+
+There are two main types of pruning techniques: pre-pruning and post-pruning.
+
+Pre-pruning: Pre-pruning, also known as "top-down" pruning, involves stopping the growth of the decision tree before it reaches its maximum depth or before all the leaf nodes are pure (i.e., contain only one class label). Common pre-pruning techniques include setting a maximum depth for the tree, limiting the minimum number of instances required in a leaf node, or using statistical measures such as entropy or Gini impurity to determine when to stop splitting a node.
+
+Post-pruning: Post-pruning, also known as "bottom-up" pruning, involves building the decision tree to its fullest extent and then pruning back the unnecessary branches or nodes. Common post-pruning techniques include cost-complexity pruning (also known as the minimal cost complexity pruning or the weakest link pruning), reduced error pruning, and validation set pruning. Cost-complexity pruning involves calculating a cost-complexity measure for each subtree and then selecting the subtree with the smallest measure to prune. Reduced error pruning involves pruning a subtree if it does not significantly increase the classification error on a separate validation set. Validation set pruning involves using a separate validation set to determine which branches or nodes to prune based on their performance on the validation set.
+
+Pruning helps to prevent overfitting, which is a common issue with decision trees. Overfitting occurs when a decision tree is too complex and captures noise or irrelevant patterns in the training data, leading to poor performance on unseen data. By pruning unnecessary branches or nodes, decision trees can be made simpler, more interpretable, and less prone to overfitting, thereby improving their predictive accuracy on new data.
